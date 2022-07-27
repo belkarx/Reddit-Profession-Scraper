@@ -15,8 +15,12 @@ Sign into your Google account, then go to https://developers.google.com/custom-s
 #### Browser (15 secs)
 Many Linux distributions set an environment variable named $BROWSER to identify the default browser. If it isn't set already, add it to your `~/.bashrc` or `~/.zshrc` (same deal, add a line with `export BROWSER=<name of your browser binary eg 'chromium'>`) and save, then `source ~/.bashrc`
 
+Checklist:
+- Reddit API secret (`$REDDIT_OSINT_PRAW_SECRET`)
+- Reddit Client ID (`$REDDIT_OSINT_PRAW_ID`)
+- Google API key (`$REDDIT_OSINT_GOOGLE_KEY`)
+- Default browser set (`$BROWSER`)
 You need a Reddit API key and Client ID, and a Google API key
-the `$BROWSER` environment variable
 
 ### Dependencies
 There is a single non-std dependency: PRAW (reddit API bindings)
@@ -31,14 +35,18 @@ Output of that will be
 
 ```
 Enter in a profession (ie 'a teacher'). 
-This will be turned into a few permutations of the search string 'I am a <profession>', specifically 
+This will be turned into a few permutations of the 
+search string 'I am a <profession>', specifically 
     'I work as []'
     'I was []'
     'I'm []'
-After entering a profession (with an article), comma separated alternate queries may optionally be added, ie
+After entering a profession (with an article), 
+comma separated alternate queries may optionally be added, ie
     'I teach at'
     'My profession is teaching'
-The final input should look something like 'a teacher, I teach at, My profession is teaching' or just 'a teacher'
+The final input should look something like 'a teacher, 
+I teach at, My profession is teaching' or just 'a teacher'
+
 profession here>
 ```
 Once a profession is specified, the program will run, logs will be outputted throughout runtime, and all collected information will be saved to a log file when completed.
