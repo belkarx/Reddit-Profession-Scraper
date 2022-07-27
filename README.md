@@ -1,6 +1,8 @@
 # Reddit Profession Scraper
 This takes a profession (ie 'teacher') and returns a list of usernames, sorted by last_seen (most recent to least). It also gives context in which the user identified as such (ie 'I am a teacher and I don't know what do do about these students) and opens the top 15 users' profiles in [redditmetis](https://redditmetis.com), a profiler. The intended use is to connect with some people of a certain profession by DMing them and chatting. Would recommend not misusing this but it's your accounts that will be blocked so do as you wish.
 
+Also, any query string (or array of strings) can be used instead of just "I am a <profession>" (ie "I enjoy biking"). You can alter the source yourself to get that functionality.
+
 ## Quickstart
 ### Creating API keys and Setting Environment Variables
 This is a pain. But necessary. Should take around 5 minutes to set up.
