@@ -22,7 +22,6 @@ Checklist:
 - Reddit Client ID (`$REDDIT_OSINT_PRAW_ID`)
 - Google API key (`$REDDIT_OSINT_GOOGLE_KEY`)
 - Default browser set (`$BROWSER`)
-You need a Reddit API key and Client ID, and a Google API key
 
 ### Dependencies
 There is a single non-std dependency: PRAW (reddit API bindings)
